@@ -1,0 +1,103 @@
+* {
+	paddig	:0;
+	margin	:0;
+}
+
+header,
+div.main,
+footer {
+	border	:1px dashed red;
+}
+
+section.top,
+section.middle,
+section.bottom,
+section.left,
+section.right {
+	border	:1px dashed blue;
+}
+/*---------------------------Bad Bad Boy------------------------*/
+div.badboy {
+	clear		:both;
+	margin		:0;
+	padding		:0;
+	height		:0 !important;
+	width		:0 !important;
+	min-height	:0 !important;
+	min-width	:0 !important;
+	float		:none !important;
+}
+/*---------------------------Zed Loos------------------------*/
+header,
+div.main,
+footer {
+	padding-top		:1px;
+}
+/*-------------------------Container--------------------------*/
+div.container {
+	margin				:10px auto;
+	width 				:950px;
+	background-image	:url('images/backguid.jpg');
+	background-repeat	:no-repeat;
+}
+/*---------------------------First Floor------------------------*/
+header {
+	min-height	:140px;
+}
+
+header section.left {
+	float		:left;
+	margin  	:32px 5px;
+	min-height	:70px;
+	width 		:360px;
+}
+
+header section.right {
+	float		:right;
+	margin 		:32px 5px;
+	min-height	:70px;
+	width 		:360px;
+}
+
+header section.middle {
+	width     	:150px;
+	min-height	:120px;
+	margin		:7px auto;
+}
+/*---------------------------Second Floor------------------------*/
+div.main {
+	min-height	:70px;
+}
+
+div.main section.left {
+	
+	min-height 	:500px;
+	margin 		:2px 420px 2px 5px;	
+}
+
+div.main section.right {
+	float		:right;
+	margin		:2px 5px;
+	min-height	:500px;
+	width 		:400px;
+	
+}
+/*---------------------------Third Floor------------------------*/
+footer {
+	min-height	:220px;
+}
+
+footer section.top {
+	min-height	:65px;
+	margin		:40px 5px 2px 5px;
+}
+
+footer section.middle {
+	min-height	:45px;
+	margin		:5px 5px 5px 5px;
+}
+
+footer section.bottom {
+	min-height	:45px;
+	margin		:5px 5px 5px 5px;
+}
