@@ -1,0 +1,126 @@
+header,
+div,
+footer {
+	border	:1px dashed red;
+}
+
+section {
+	border	:1px dashed blue;
+}
+
+/*It is bad boy
+----------------------------------------------------*/
+div.badboy {
+	clear		:both;
+	height		:0 !important;
+	width		:0 !important;
+	min-height	:0 !important;
+	min-width	:0 !important;
+	float		:none !important;
+}
+/*Zed Loos
+---------------------------------------------------*/
+header,
+div.middlecontainer div.middle,
+div.middlecontainer div.bottom,
+footer {
+	padding-top		:1px;
+	padding-bottom	:1px;
+}
+/*Container
+---------------------------------------------------*/
+div.container {
+	margin				:10px auto;
+	width 				:950px;
+	background-image	:url('backguid2.jpg');
+	background-repeat	:no-repeat;
+}
+/*First Floor (Header)
+---------------------------------------------------*/
+header {
+	min-height	:205px;
+}
+
+header section.left {
+	float		:left;
+	margin  	:20px 55px 5px;
+	min-height	:170px;
+	width 		:200px;
+}
+
+header section.right {
+	margin		:20px 20px 10px 300px;
+	min-height	:170px;
+	width 		:640px;
+}
+/*Second Floor (A Compound Floor)
+-------------------------------------------------*/
+
+/*Slider
+-------------------------------------------------*/
+div.middlecontainer div.slider {
+	min-height	:320px;
+}
+/*Middle Part
+-------------------------------------------------*/
+div.middlecontainer div.middle section.left {
+	float		:left;
+	min-height	:310px;
+	width   	:305px;
+	margin 		:4px;
+}
+
+div.middlecontainer div.middle section.middle {
+	float 		:left;
+	min-height	:310px;
+	width 		:305px;
+	margin		:4px;
+}
+
+div.middlecontainer div.middle section.right {
+	min-height	:310px;
+	margin		:4px 4px 4px 635px;
+	width 		:305px;
+}
+/*Bottom Part
+-------------------------------------------------*/
+div.middlecontainer div.bottom section.firstleft {
+	float 		:left;
+	min-height	:230px;
+	width 		:220px;
+	margin 		:4px;
+}
+
+div.middlecontainer div.bottom section.secondleft {
+	float		:left;
+	min-height	:230px;
+	width 		:235px;
+	margin 		:4px;
+}
+
+div.middlecontainer div.bottom section.thirdleft {
+	float		:left;
+	min-height	:230px;
+	width 		:220px;
+	margin 		:4px;
+}
+
+div.middlecontainer div.bottom section.right {
+	min-height	:230px;
+	width 		:230px;
+	margin		:4px 4px 4px 710px;
+}
+/*Third Floor (Footer)
+-------------------------------------------------*/
+footer section.left {
+	float		:left;
+	min-height	:95px;
+	width 		:320px;
+	margin 		:4px 4px 0 4px;
+}
+
+footer section.right {
+	min-height	:95px;
+	width 		:340px;
+	margin 		:4px 4px 0 605px;
+}
