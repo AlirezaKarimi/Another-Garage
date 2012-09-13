@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>CIW Class 6</title>
+	<style>
+		body{
+			background-color:powderblue;
+			background-image:url('images/back.jpg');
+			background-repeat:no-repeat;
+			background-position:right top;
+			background-attachment:fixed;
+		}
+		h1{
+			color:blue;
+		}
+		h2{
+			color:red;
+			text-align:center;
+		}
+		p{
+			font-family:"Times New Roman";
+			font-size:20px;
+		}
+		p.sec1{
+			text-align:justify;
+			color:green;
+		}
+		p.normal{
+			font-style:normal;
+		}
+		p.italic{
+			font-style:italic;
+		}
+		p.oblique{
+			font-style:oblique;
+		}
+		p.small{
+			font-variant:small-caps;
+		}
+		a:link{
+			background-color:red;
+		}    /* unvisited link */
+		a:visited{
+			background-color:#FFFF85;
+		} /* visited link */
+		a:hover{
+			background-color:#FF704D;
+		}   /* mouse over link */
+		a:active{
+			background-color:lightblue;
+		}  /* selected link */
+		a.a{
+			text-decoration:none;
+		}
+		a.a:link{
+			color:#FF0000;
+		}    /* unvisited link */
+		a.a:visited{
+			color:#00FF00;
+		} /* visited link */
+		a.a:hover{
+			color:#0000FF;
+			font-size:130%;
+		}   /* mouse over link */
+		a.a:active{
+			color:#0000FF;
+		}  /* selected link */
+		a.b:link{
+			text-decoration:none;
+		}
+		a.b:visited{
+			text-decoration:none;
+		}
+		a.b:hover{
+			text-decoration:underline;
+		}
+		a.b:active{
+			text-decoration:overline;
+		}
+		a.c:link{
+			color:#ff0000;
+			display:block;
+			width:120px;
+		}
+		a.c:visited {
+			color:#0000ff;
+			display:block;
+			width:120px;
+		}
+		a.c:hover {
+			font-family:monospace;
+			background-color:blue;
+		}
+		ol{
+			list-style-type:upper-roman;
+		}
+		ul{
+			list-style-image:url('images/smile.gif');
+		}
+		table,td,th{
+			border:1px dotted green;
+		}
+		table{
+			width:50%;
+			border-collapse:collapse;
+		}
+		td{
+			text-align:center;
+			padding:20px;
+			background-color:magenta;
+			color:white;
+			vertical-align:top;
+			height:50px;
+		}
+		th{
+			height:40px;
+		}
+		tr.alt td{
+			background-color:white;
+			color:black;
+		}
+		caption{
+			caption-side:bottom;
+		}
+		p.none {
+			border-style:none;
+		}
+		p.dotted {
+			border:12px solid green;
+			border-style:dotted;
+			width:50%;
+		}
+		p.dashed {
+			border:12px solid green;
+			border-style:dashed;
+			width:50%;
+		}
+		p.solid {
+			border:12px solid green;
+			border-style:solid;
+			width:50%;
+		}
+		p.double {
+			border:12px solid green;
+			border-style:double;
+			width:50%;
+		}
+		p.groove {
+			border:12px solid green;
+			border-style:groove;
+			width:50%;
+		}
+		p.ridge {
+			border:12px solid green;
+			border-style:ridge;
+			width:50%;
+		}
+		p.inset {
+			border:12px solid green;
+			border-style:inset;
+			width:50%;
+		}
+		p.outset {
+			border:12px solid green;
+			border-style:outset;
+			width:50%;
+		}
+		p.hidden {
+			border:12px solid green;
+			border-style:hidden;
+			width:50%;
+		}
+	</style>
+</head>
+<body>
+	<p class="sec1">
+		This is a test for going to a specific part of another page.</br>
+		This is my <a href="another.htm#interests">interests</a>
+	</p>
+	<h1>This is an image map</h1>
+	<img src="images/pat.jpg" style="width:240px; height:159px;" alt="apple" usemap="#patmap"/>
+	<map id="patmap" name="patmap">
+		<area shape="rect" coords="0,0,114,156" alt="mat" title="Mr. Mat"/>
+		<area shape="rect" coords="114,0,240,156" alt="pat" title="Mr. Pat"/>
+	</map>
+	<h2>I'm gonna show you how to use target in an iframe:</h2>
+	<iframe src="iframe.htm" style="width:900px; height=900px;"></iframe>
+	<p style="text-decoration:overline;">
+		Here are some tests for text decoration:
+	</p>
+	<p style="text-decoration:line-through;">
+		Here are some tests for text decoration:
+	</p>
+	<p style="text-decoration:underline; font-family:arial">
+		Here are some tests for text decoration:
+	</p>
+	<p class="normal">
+		some tests for font styles
+	</p>
+	<p class="oblique">
+		some tests for font styles
+	</p>
+	<p class="small">
+		Some Tests for font variants
+	</p>
+	<a class="a" href="http://www.sepanta.net">It is a test for hyperlinks</a>
+	<br/>
+	<br/>
+	<a class="b" href="http://www.sepanta.net">It is another test for hyperlinks</a>
+	<br/>
+	<br/>
+	<a class="c" href="http://www.sepanta.net">It is another test for hyperlinks</a>
+	<br/>
+	<br/>
+	<p>Some fruits:</p>
+	<ol>
+		<li>Apple</li>
+		<li>Banana</li>
+		<li>Orange</li>
+		<li>Peach</li>
+	</ol>
+	<br/>
+	<br/>
+	<p>Some fruits:</p>
+	<ul>
+		<li>Apple</li>
+		<li>Banana</li>
+		<li>Orange</li>
+		<li>Peach</li>
+	</ul>
+	<table>
+		<caption>Table 1.1 Customers</caption>
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Savings</th>
+		</tr>
+		<tr class="alt">
+			<td>Peter</td>
+			<td>Griffin</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>Lois</td>
+			<td>Griffin</td>
+			<td>$150</td>
+		</tr>
+		<tr class="alt">
+			<td>Joe</td>
+			<td>Swanson</td>
+			<td>$300</td>
+		</tr>
+		<tr>
+			<td>Cleveland</td>
+			<td>Brown</td>
+			<td>$250</td>
+	</tr>
+	</table>
+	<p class="none">No border.</p>
+	<p class="dotted">A dotted border.</p>
+	<p class="dashed">A dashed border.</p>
+	<p class="solid">A solid border.</p>
+	<p class="double">A double border.</p>
+	<p class="groove">A groove border.</p>
+	<p class="ridge">A ridge border.</p>
+	<p class="inset">An inset border.</p>
+	<p class="outset">An outset border.</p>
+	<p class="hidden">A hidden border.</p>
+</body>
+</html>
+
+
+
+
+
+
+
