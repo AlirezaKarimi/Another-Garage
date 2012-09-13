@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Children's Home</title>
+	<style type="text/css">
+		* {		
+			padding : 0;
+			margin	: 0;
+		}
+
+		body {
+			background-color : black ;
+		}
+
+		div.container {
+			width  : 950px;
+			height : 670px;
+			margin : 0px auto;
+			/*border : 2px double #FFDF00;*/
+			border-top		: 2px double #D4AF37;
+			background-color: #fff ;
+		}
+
+		nav.menu {
+			background-color: #fff;
+			padding-left : 50px;
+			margin-top	 : 30px;
+		}
+
+		.badboy {	
+			width  : 0px;
+			height : 0px;
+			clear  : both;
+		}
+
+		nav.menu menu {
+			list-style-type	: none;
+		} 
+
+		nav.menu li {
+			float 		 	 : left;	
+			position 	 	 : relative;     
+			background 		 : url('images/1.png');
+			background-repeat: no-repeat; 
+			border-bottom 	: 1px solid #FFDF00;			
+			
+		}
+
+		nav.menu > menu >li:hover {
+			background 		 : url('images/2.png');
+			background-repeat: no-repeat;
+		}
+
+		nav.menu > menu > li:hover > a {   
+			color : darkmagenta;
+			-webkit-transform: rotate(10deg);	
+			-moz-transform: rotate(10deg);
+		}
+
+		nav.menu li:first-child {
+			border-left	: none;
+		}
+		nav.menu li li:last-child {
+			border-bottom	: 1px solid #FFDF00;			
+		}
+
+		nav.menu a {
+			display			: block; 
+			padding			: 32px 20px 8px 45px;
+			text-decoration	: none;
+			font-family 	: "times new roman", "Trebuchet MS", Verdana, sans-serif;
+			font-size   	: 16px;
+			text-transform 	: capitalize;
+			color 			: magenta;
+			white-space		: nowrap;
+		}
+
+		nav.menu li menu {
+			background-color : #fff;
+			position : absolute;
+			top		 : 100%;
+			left     : 0;
+			min-width: 100%;
+			display  : none;
+		}
+
+		nav.menu li li {
+			float 		: none;
+			background 	: url('images/3.png');
+			border 		: none;
+			border-top	: 1px solid #FFDF00;
+			
+			background-repeat: no-repeat;
+		}
+
+		nav.menu li:hover menu{
+			display : block;
+		}
+
+		nav.menu li li:hover {
+			background 		 : url('images/2.png');
+			background-repeat: no-repeat;
+		}
+
+		nav.menu li  li:hover > a {
+			color : darkmagenta;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<nav class="menu">
+			<menu>
+				<li><a href="#">home</a></li>
+				<li><a href="#">toys</a></li>
+				<li>
+					<a href="#">education</a>
+					<menu>
+						<li><a href="#">language</a></li>
+						<li><a href="#">swimming</a></li>
+						<li><a href="#">music</a></li>
+					</menu>
+				</li>
+				<li><a href="#">stories</a></li>
+				<li>
+					<a href="#">about us</a>
+					<menu>
+						<li><a href="#">boys department</a></li>
+						<li><a href="#">girls department</a></li>
+						<li><a href="#">our company</a></li>
+					</menu>
+				</li>
+			</menu>
+			<div class="badboy"></div>
+		</nav>
+		
+	</div>
+</body>
+</html>
