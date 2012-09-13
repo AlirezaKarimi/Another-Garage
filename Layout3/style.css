@@ -1,0 +1,118 @@
+header,
+div,
+footer {
+	outline	:1px dashed red;
+}
+
+section {
+	outline	:1px dashed blue;
+}
+
+/*Container
+---------------------------------------------------*/
+div.container {
+	margin				:10px auto;
+
+	background-repeat	:no-repeat;
+	width: 970px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.contact {
+	min-height: 38px;
+	padding-top:2px;
+}
+
+section.mail{
+	min-height: 28px;
+}
+
+header {
+	padding:15px 10px 10px 5px;
+}
+
+header section {
+	min-height: 50px;
+}
+
+div.transparenttop {
+	min-height: 10px;
+}
+
+section.slider {
+	min-height: 420px;
+}
+
+section.textpanel {
+	min-height: 420px;
+}
+
+div.recent {
+	min-height: 35px;
+}
+
+div.recentbottom {
+	min-height: 50px;
+}
+
+div.news {
+	padding-left: 10px;
+	padding-top: 14px;
+	padding-bottom: 10px;
+}
+
+section.news1 {
+	min-height: 214px;
+}
+
+section.news2 {
+	min-height: 214px;	
+}
+
+section.news3 {
+	min-height: 214px;
+}
+
+section.news4 {
+	min-height: 214px;
+}
+
+div.blog {
+	padding-top: 20px;
+	padding-bottom: 14px;
+	padding-left: 10px
+}
+
+section.blog1 {
+	min-height: 300px;
+}
+
+section.blog2 {
+	min-height: 300px;
+}
+
+section.blog3 {
+	min-height: 300px;
+}
+
+footer {
+	padding:10px;
+}
+
+footer section {
+	min-height: 50px;
+}
+
+div.backimg {
+	background-image: url('backimg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -2;
+}
